@@ -9,12 +9,13 @@ export default function Aniheader(props) {
   const [genres, setGenres] = useState('')
   const [likebool, setLikebool] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [aniId, setAniId] = useState(localStorage.getItem('LS_ID'))
 
   // usestate from react, use a bool variable in the css file
   const [isVertical, setIsVertical] = useState(false);
   const [aniData, setAniData] = useState([{}])
 
-  const aniId = localStorage.getItem('LS_ID')
+
   // console.log(aniData.links[0])
 
   window.onresize = () =>{
