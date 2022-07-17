@@ -14,7 +14,7 @@ export default function Listitem(props) {
               {
                 setAniId();
                 localStorage.setItem('LS_ID', aniId)
-                window.location.reload()
+                // window.location.reload()
               }
               else
               {
