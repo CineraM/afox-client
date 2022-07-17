@@ -1,10 +1,8 @@
 import './listitem.scss'
 import { useNavigate } from "react-router-dom"
-import { useState } from 'react';
 
 export default function Listitem(props) {
   let navigate = useNavigate();
-  const [aniId, setAniId] = useState(props.aniId)
 
   return (
     <div className='listItem'>
@@ -12,13 +10,12 @@ export default function Listitem(props) {
             onClick={() => {
               if(props.isAnime)
               {
-                setAniId();
-                localStorage.setItem('LS_ID', aniId)
-                // window.location.reload()
+                localStorage.setItem('LS_ID', props.aniId)
+                window.location.reload()
               }
               else
               {
-                localStorage.setItem('LS_ID', aniId)
+                localStorage.setItem('LS_ID', props.aniId)
                 navigate("/anime")
               }
             }} 
