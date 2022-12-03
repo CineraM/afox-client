@@ -24,7 +24,7 @@ export default function Features() {
     async function fetchFeatured() 
     {
         try {
-            const response = await fetch(`https://anifox-cinera.herokuapp.com/api/featured`, {
+            const response = await fetch(`https://ani-fox-db.onrender.com/api/featured`, {
               method: 'GET',
               
             });

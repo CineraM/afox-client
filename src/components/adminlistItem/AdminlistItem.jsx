@@ -13,7 +13,7 @@ export default function Listitem(props) {
 
   // Change the featured series on the database
   async function changeFeatured() {
-    const response = await fetch('https://anifox-cinera.herokuapp.com/api/change_featured', {
+    const response = await fetch('https://ani-fox-db.onrender.com/api/change_featured', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export default function Listitem(props) {
 // Get likes for a specific series
 async function get_anime_likes() {
   try {
-    const response = await fetch('https://anifox-cinera.herokuapp.com/api/get_anime_likes', {
+    const response = await fetch('https://ani-fox-db.onrender.com/api/get_anime_likes', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',

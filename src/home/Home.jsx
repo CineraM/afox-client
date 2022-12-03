@@ -52,7 +52,7 @@ const Home = () => {
           // setGenre(list)
           const genre = list
             try {
-                const response = await fetch(`https://anifox-cinera.herokuapp.com/api/animeGenres`, {
+                const response = await fetch(`https://ani-fox-db.onrender.com/api/animeGenres`, {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json',

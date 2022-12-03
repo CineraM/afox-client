@@ -16,7 +16,7 @@ export default function Logincontent() {
         setLoading(true)
 		event.preventDefault()
 
-		const response = await fetch('https://anifox-cinera.herokuapp.com/api/login', {
+		const response = await fetch('https://ani-fox-db.onrender.com/api/login', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

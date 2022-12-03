@@ -23,7 +23,7 @@ export default function Registercontent() {
 
         event.preventDefault()
         
-        const response = await fetch('https://anifox-cinera.herokuapp.com/api/register', {
+        const response = await fetch('https://ani-fox-db.onrender.com/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

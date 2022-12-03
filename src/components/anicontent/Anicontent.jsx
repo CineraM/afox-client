@@ -11,7 +11,7 @@ export default function Anicontent(props) {
   {
       try 
       {
-        const response = await fetch('https://anifox-cinera.herokuapp.com/api/anime', {
+        const response = await fetch('https://ani-fox-db.onrender.com/api/anime', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

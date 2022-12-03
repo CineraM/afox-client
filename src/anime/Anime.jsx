@@ -22,7 +22,7 @@ export default function Anime() {
   // Get the series the user liked
   async function get_user_list() {    
     try {
-      const response = await fetch('https://anifox-cinera.herokuapp.com/api/get_user_likes_genre', {
+      const response = await fetch('https://ani-fox-db.onrender.com/api/get_user_likes_genre', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

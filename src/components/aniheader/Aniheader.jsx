@@ -25,7 +25,7 @@ export default function Aniheader(props) {
   };
 
   async function getUserLike() {    
-    const response = await fetch('https://anifox-cinera.herokuapp.com/api/find_user_like', {
+    const response = await fetch('https://ani-fox-db.onrender.com/api/find_user_like', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export default function Aniheader(props) {
 
 
   async function like() {  
-    const response = await fetch('https://anifox-cinera.herokuapp.com/api/like', {
+    const response = await fetch('https://ani-fox-db.onrender.com/api/like', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ export default function Aniheader(props) {
   }
 
   async function remove_like() {    
-    const response = await fetch('https://anifox-cinera.herokuapp.com/api/remove_like', {
+    const response = await fetch('https://ani-fox-db.onrender.com/api/remove_like', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ export default function Aniheader(props) {
     {
         try 
         {
-          const response = await fetch('https://anifox-cinera.herokuapp.com/api/anime', {
+          const response = await fetch('https://ani-fox-db.onrender.com/api/anime', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
